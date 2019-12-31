@@ -1,6 +1,6 @@
 # vuejs-imggallery
 
-:camera: Vuejs Image Gallery
+Vuejs Image Gallery
 
 My first attempt at creating a reactive image gallery/viewer with vuejs.
 
