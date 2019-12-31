@@ -1,24 +1,23 @@
 # vuejs-imggallery
 
-## Project setup
-```
-npm install
-```
+:camera: Vuejs Image Gallery
 
-### Compiles and hot-reloads for development
+My first attempt at creating a reactive image gallery/viewer with vuejs.
+
+This project is based on the following node modules:
+- Axios http req.
+- Stack-grid images (vue).
+
+To run the project follow the instructions below:
+
+## Vuejs Project setup
+Download, extract zip file from &quot;Releases&quot;.
+
+Start up server in project directory by running
 ```
 npm run serve
 ```
+Open localhost at index.html.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
+### To Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

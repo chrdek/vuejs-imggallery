@@ -19,3 +19,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Other files
+*.zip
+*.tar
+*.gz
+*.rar
