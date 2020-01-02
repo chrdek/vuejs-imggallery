@@ -2,9 +2,9 @@
 
 Vuejs Image Gallery
 
-My first attempt at creating a reactive image gallery/viewer with vuejs. Currently utilizing Vue.js 4.2.1.
+My first attempt at creating a reactive image gallery/viewer with vuejs. Currently utilizing Vue.js 4.1.1.
 
-This project is based on the following node modules:
+This project is based on the following node modules(node 10.15.0):
 - Axios http req.
 - Stack-grid images (vue).
 
