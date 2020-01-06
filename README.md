@@ -21,3 +21,9 @@ Open localhost at index.html.
 
 ### To Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Dependencies required:
+```
++-- axios@0.19.0
++-- vue-stack-grid@1.1.0
+```
