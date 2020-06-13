@@ -13,7 +13,8 @@
     "core-js": "^3.4.4",
     "minimist": "^1.2.3",
     "vue": "^2.6.10",
-    "vue-stack-grid": "^1.1.0"
+    "vue-stack-grid": "^1.1.0",
+    "websocket-extensions": "^0.1.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
