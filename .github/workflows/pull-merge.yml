@@ -2,17 +2,17 @@
 name: SEC MERGE
 
 on:
-    pull_request:
-      branches: [ master ]
-      types: [ created ]
+  pull_request:
+    branches: [ master ]
+    types: [ created ]
 
-      jobs: 
-        mergejob1: 
+    jobs: 
+      merge_job: 
 # Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
         runs-on: self-hosted
-
 # Merges on latest master, adds default message.
-      steps:
+
+      steps: 
         - name: Pull requests direct merge with message
         - id: Merge1
         - shell: pwsh
