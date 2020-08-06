@@ -14,7 +14,9 @@ jobs:
 # Merges on latest master, adds default message.
         steps: 
         - name: Retrieve PR changes, merge with message.
+          shell: powershell
           run: | 
+            cd  "C:\Users\standarduser\Source\Repos\vuejs-imggallery\"
             git checkout "master"
             git merge --commit -m "NPM changes added" --no-ff -q "dependabot/npm_and_yarn/vue/cli-service-4.4.6"
             git push
