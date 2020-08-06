@@ -9,21 +9,12 @@ on:
 jobs: 
       merge_job: 
 # Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
-        runs-on: self-hosted
+        runs-on: windows-latest
         
 # Merges on latest master, adds default message.
         steps: 
-        - name: Retrieve relevant changes for PR.
-          shell: pwsh
+        - name: Retrieve PR changes, merge with message.
           run: | 
-            git fetch origin
-            git checkout -b "dependabot/npm_and_yarn/vue/cli-service-4.4.6" "origin/dependabot/npm_and_yarn/vue/cli-service-4.4.6"
-            git merge "master"
-        - name: Merge changes, add message.
-          shell: pwsh
-          run: |  
             git checkout "master"
-            git merge -n --commit -m "NPM changes added" --no-ff -q "dependabot/npm_and_yarn/vue/cli-service-4.4.6" 
-            git push origin "master"
-           
-             # git merge -n --commit -m "NPM changes added" --ff -q
+            git merge --commit -m "NPM changes added" --no-ff -q "dependabot/npm_and_yarn/vue/cli-service-4.4.6"
+            git push
