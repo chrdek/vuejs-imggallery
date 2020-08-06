@@ -7,13 +7,14 @@ on:
       - master
 jobs: 
       merge_job: 
+        
 # Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
         runs-on: self-hosted
         
 # Merges on latest master, adds default message.
         steps: 
         - name: Pull requests direct merge with message
-        - uses: actions/checkout@master
-        - run: | 
+          shell: pwsh
+          run: | 
              echo Running action id - $GITHUB_RUN_ID for ($GITHUB_RUN_NUMBER) times, merge on $GITHUB_REPOSITORY
              git merge -n --commit -m "NPM changes added" --ff -q
