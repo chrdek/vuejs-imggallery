@@ -1,20 +1,20 @@
 # Basic workflow for security dependencies merge.
 name: SEC MERGE
 
-on: 
+on:
   pull_request:
-    branches: [ master ]
-    types: [ created ]
+    branches: 
+      - master
     
 jobs: 
-  merge_job: 
-# Scheduling done via host, altern. use CronExpr: 0 0 22/10 * 5 *
-    runs-on: self-hosted
+      merge_job: 
+# Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
+        runs-on: self-hosted
         
 # Merges on latest master, adds default message.
-    steps: 
-      - name: merge1
-      - shell: pwsh
-        run: | 
-             echo Running action id - $GITHUB_RUN_ID for ($GITHUB_RUN_NUMBER) times, merge on $GITHUB_REPOSITORY
-             git merge -n --commit -m "NPM changes added" --ff -q
+        steps: 
+          - name: Pull requests direct merge with message
+          - shell: pwsh
+            run: | 
+              echo Running action id - $GITHUB_RUN_ID for ($GITHUB_RUN_NUMBER) times, merge on $GITHUB_REPOSITORY
+              git merge -n --commit -m "NPM changes added" --ff -q
