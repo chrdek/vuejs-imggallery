@@ -1,0 +1,20 @@
+# Basic workflow for security dependencies merge.
+name: SEC MERGE
+
+on:
+  workflow_dispatch:
+  # pull_request:
+    branches: 
+      - master
+jobs: 
+      merge_job: 
+# Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
+        runs-on: windows-latest
+        
+# Merges on latest master, adds default message.
+        steps: 
+        - name: Retrieve PR changes, merge with message.
+          run: | 
+            git checkout "master"
+            git merge --commit -m "NPM changes added" --no-ff -q "dependabot/npm_and_yarn/vue/cli-service-4.4.6"
+            git push
