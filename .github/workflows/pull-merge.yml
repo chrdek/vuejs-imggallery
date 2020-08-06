@@ -13,8 +13,6 @@ jobs:
         
 # Merges on latest master, adds default message.
     steps: 
-      - id: job1
-        uses: actions/checkout@master
       - shell: pwsh
         run: | 
              echo Running action id - $GITHUB_RUN_ID for ($GITHUB_RUN_NUMBER) times, merge on $GITHUB_REPOSITORY
