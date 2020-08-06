@@ -8,11 +8,12 @@ on:
     
 jobs: 
   merge_job: 
-# Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
+# Scheduling done via host, altern. use CronExpr: 0 0 22/10 * 5 *
     runs-on: self-hosted
         
 # Merges on latest master, adds default message.
     steps: 
+      - name: merge1
       - shell: pwsh
         run: | 
              echo Running action id - $GITHUB_RUN_ID for ($GITHUB_RUN_NUMBER) times, merge on $GITHUB_REPOSITORY
