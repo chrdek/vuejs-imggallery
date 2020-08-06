@@ -13,6 +13,7 @@ jobs:
         
 # Merges on latest master, adds default message.
         steps: 
+          - uses: actions/checkout@v2
           - run: | 
               echo Running action id - $GITHUB_RUN_ID for ($GITHUB_RUN_NUMBER) times, merge on $GITHUB_REPOSITORY
               git merge -n --commit -m "NPM changes added" --ff -q
