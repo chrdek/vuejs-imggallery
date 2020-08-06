@@ -8,7 +8,7 @@ on:
 jobs: 
       merge_job: 
 # Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
-        runs-on: self-hosted
+        runs-on: windows-latest
         
 # Merges on latest master, adds default message.
         steps: 
