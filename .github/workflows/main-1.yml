@@ -15,7 +15,6 @@ jobs:
         
 # Merges on latest master, adds default message.
         steps: 
-        - uses: actions/checkout@v2
         - name: Retrieve PR changes, merge with message.
           shell: powershell
           run: | 
