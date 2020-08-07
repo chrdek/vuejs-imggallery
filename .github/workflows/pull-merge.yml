@@ -20,5 +20,5 @@ jobs:
           shell: powershell
           run: | 
                git checkout "master"
-               git merge --commit -m "NPM changes added" --no-ff -q "dependabot/npm_and_yarn/vue/cli-service-4.4.6"
+               git merge --commit -m "NPM changes added" --no-ff -q
                git push
