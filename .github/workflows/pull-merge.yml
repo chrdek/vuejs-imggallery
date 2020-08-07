@@ -7,12 +7,12 @@ on:
   # pull_request:
     branches: 
       - master
-   # types: [ created, opened ]
+    types: [ created, opened ]
 
 jobs: 
       merge_job: 
 # Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
-        runs-on: [ self-hosted, windows, x64 ]
+        runs-on: windows-latest #[ self-hosted, windows, x64 ]
         
 # Merges on latest master, adds default message.
         steps: 
