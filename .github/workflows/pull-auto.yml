@@ -1,3 +1,10 @@
-- name: Merge pull requests
+name: Merge pull requests
 
-  uses: pascalgn/automerge-action@v0.9.0
+on:
+  workflow_dispatch
+
+jobs:
+      job1:
+        runs-on: self-hosted
+        steps:
+          - uses: pascalgn/automerge-action@v0.9.0
