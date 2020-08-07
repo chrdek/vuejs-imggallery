@@ -1,5 +1,12 @@
-- name: bom-check
-  uses: arma-actions/bom-check@v1.1
-  with:
-     # Path to check
-     path: # optional, default is .
+  
+name: A workflow for my Hello World file
+on: workflow_dispatch
+jobs:
+  build:
+    name: Greeting default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./
+        with:
+          MY_NAME: "Test"
