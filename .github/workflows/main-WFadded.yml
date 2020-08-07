@@ -1,0 +1,10 @@
+name: A workflow for my Hello World file
+on: workflow_dispatch
+jobs:
+  build:
+    name: Greeting default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sudo-bot/action-pull-request-merge@v1.1.1
+        with:
+          MY_NAME: "Test"
