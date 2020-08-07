@@ -7,7 +7,7 @@ on:
   # pull_request:
     branches: 
       - master
-    types: [ created, opened ]
+   # types: [ created, opened ]
 
 jobs: 
       merge_job: 
