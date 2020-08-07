@@ -1,0 +1,5 @@
+- name: bom-check
+  uses: arma-actions/bom-check@v1.1
+  with:
+     # Path to check
+     path: # optional, default is .
