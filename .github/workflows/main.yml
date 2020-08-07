@@ -1,0 +1,23 @@
+# Basic workflow for security dependencies merge.
+name: SEC MERGE
+
+on:
+  workflow_dispatch:
+  # pull_request:
+    branches: 
+      - master
+    types: [ created, opened ]
+
+jobs: 
+      merge_job: 
+# Scheduling done via host, altern. via CronExpr: 0 0 22/10 * 5 *
+        runs-on: [ self-hosted, windows, x64 ]
+        
+# Merges on latest master, adds default message.
+        steps: 
+        - uses: actions/checkout@v1
+        - name: Retrieve PR changes, merge with message.
+          shell: powershell
+          run: | 
+               git merge --commit -m "NPM changes added" --no-ff -q
+               git push
