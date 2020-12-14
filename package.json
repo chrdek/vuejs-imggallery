@@ -17,7 +17,7 @@
     "lodash": "^4.17.19",
     "minimist": "^1.2.3",
     "vue": "^2.6.10",
-    "vue-stack-grid": "^1.1.0",
+    "vue-stack-grid": "^1.2.2",
     "websocket-extensions": "^0.1.4"
   },
   "devDependencies": {
