@@ -1,4 +1,18 @@
-- name: Merge pull requests
+
+name: Merge pull requests (external action)
+
+on:
+  schedule:
+  - cron: "20 20 * * 5" 
+
+jobs:
+  merge:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: pascalgn/automerge-action@v0.13.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
   # You may pin to the exact commit or the version.
   # uses: pascalgn/automerge-action@c6f2699cc4c19ea7ce7f560dbebd85565b744377
-  uses: pascalgn/automerge-action@v0.13.0
