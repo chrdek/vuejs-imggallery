@@ -1,0 +1,2 @@
+- name: await-status-action
+  uses: Sibz/await-status-action@v1.0.1
