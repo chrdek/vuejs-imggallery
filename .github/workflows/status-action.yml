@@ -1,4 +1,4 @@
-name: Status Actions per workflow
+name: await-status-action
 
 on:
   schedule:
@@ -11,5 +11,6 @@ jobs:
 
     steps:
     - uses: Sibz/await-status-action@v1.0.1
+
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
