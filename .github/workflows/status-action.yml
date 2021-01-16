@@ -1,2 +1,15 @@
-- name: await-status-action
-  uses: Sibz/await-status-action@v1.0.1
+name: Status Actions per workflow
+
+on:
+  schedule:
+  - cron: "15 10 * * *"
+
+jobs:
+  status-action:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: Sibz/await-status-action@v1.0.1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
