@@ -1,5 +1,5 @@
 
-name: Merge pull requests (external action)
+name: dependabot merges
 
 on:
   schedule:
