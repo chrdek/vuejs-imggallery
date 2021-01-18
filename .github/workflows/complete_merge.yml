@@ -7,7 +7,6 @@ on:
 
 jobs:
   merge:
-    
     runs-on: ubuntu-latest
     
     steps:
