@@ -12,6 +12,8 @@ jobs:
     steps:
       - uses: pascalgn/automerge-action@v0.13.0
         with:
-          repo-token: ${{ secrets.default_access }}
+          repo-token: ${{ secrets.ACTION_REPO }}
   # You may pin to the exact commit or the version.
+  #      env:
+  #        default_access: ${{ secrets.ACTION_REPO }}
   # uses: pascalgn/automerge-action@c6f2699cc4c19ea7ce7f560dbebd85565b744377
