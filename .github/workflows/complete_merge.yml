@@ -3,7 +3,7 @@ name: auto merges
 
 on:
   schedule:
-  - cron: "0 22 * * *" 
+  - cron: "05 22 * * *" 
 
 jobs:
   merge:
