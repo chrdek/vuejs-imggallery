@@ -1,9 +1,9 @@
 
-name: dependabot merges
+name: auto merges
 
 on:
   schedule:
-  - cron: "20 20 * * 5" 
+  - cron: "21 55 * * *" 
 
 jobs:
   merge:
