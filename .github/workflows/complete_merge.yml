@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: pascalgn/automerge-action@v0.13.0
         with:
-          repository: chrdek/vuejs-imggallary
+          repository: chrdek/vuejs-imggallery
           token: ${{ secrets.ACTION_REPO }}
   # You may pin to the exact commit or the version.
   #      env:
