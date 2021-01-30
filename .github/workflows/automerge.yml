@@ -12,7 +12,7 @@ on:
       - reopened
       - unlocked 
   schedule:
-  - cron: "55 12 * * *"
+  - cron: "10 13 * * *"
      
 jobs:
   automerge:
