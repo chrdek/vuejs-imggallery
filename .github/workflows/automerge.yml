@@ -21,6 +21,6 @@ jobs:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.13.0"
         env:
-          ACTION_REPO: "${{ secrets.ACTION_REPO }}"
+          GITHUB_TOKEN: "${{ secrets.ACTION_REPO }}"
           MERGE_RETRIES: "3"
           MERGE_RETRY_SLEEP: "5000"
