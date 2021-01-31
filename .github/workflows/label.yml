@@ -1,7 +1,6 @@
 name: auto label
 
 on:
-  workflow_run:
   pull_request:
     branches: "master"
   schedule:
