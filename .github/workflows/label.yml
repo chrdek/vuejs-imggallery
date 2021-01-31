@@ -1,8 +1,7 @@
 name: auto label
 
 on:
-  pull_request:
-    branches: master
+  pull_request_target:
   schedule:
     - cron: "40/10 11 * * *"
 jobs:
