@@ -1,7 +1,7 @@
 name: stales check
 on:
   schedule:
-  - cron: "50/5 13 * * *"
+  - cron: "0 20 15 * *"
 
 jobs:
   stale:
