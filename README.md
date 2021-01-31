@@ -3,7 +3,7 @@
 Vuejs Image Gallery
 
 
-![auto merges](https://github.com/chrdek/vuejs-imggallery/workflows/auto%20merges/badge.svg)
+![auto merges](https://github.com/chrdek/vuejs-imggallery/workflows/auto%20merges/badge.svg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![stales check](https://github.com/chrdek/vuejs-imggallery/workflows/stales%20check/badge.svg)
 <br/>
 
 My first attempt at creating a reactive image gallery/viewer with vuejs. Currently utilizing Vue.js 4.1.1.
