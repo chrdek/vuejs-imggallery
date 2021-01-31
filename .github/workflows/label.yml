@@ -2,16 +2,18 @@ name: auto label
 
 on:
   pull_request_target:
+    types: [opened, edited, closed, reopened]
   schedule:
-    - cron: "45/10 12 * * *"
+    - cron: "45/5 14 * * *"
 jobs:
-  automerge:
+  labeling:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v3
       with:
     # The GITHUB_TOKEN secret
         repo-token: "{{ $secrets.GITHUB_TOKEN }}"
+        automerge: "*/*"
     # The path for the label configurations
         configuration-path: .github/workflows/label.yml
     # optional set to workflows/label.yml
