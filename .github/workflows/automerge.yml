@@ -15,10 +15,10 @@ on:
       - unlocked
      
 jobs:
-  dependencies:
+  automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: dependencies
+      - name: automerge
         uses: "pascalgn/automerge-action@v0.13.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
