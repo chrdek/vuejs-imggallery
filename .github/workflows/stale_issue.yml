@@ -1,8 +1,7 @@
-name: stale issues,PR
-
+name: stales check
 on:
   schedule:
-  - cron: "0 20 15 * *"
+  - cron: "50/5 13 * * *"
 
 jobs:
   stale:
