@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "acorn": "^8.0.4",
+    "acorn": "^8.0.5",
     "axios": "^0.21.1",
     "core-js": "^3.8.3",
     "dot-prop": "^6.0.1",
