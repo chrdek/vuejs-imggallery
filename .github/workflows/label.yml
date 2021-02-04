@@ -16,6 +16,6 @@ jobs:
         repo-token: "{{ $secrets.GITHUB_TOKEN }}"
         automerge: "*/*"
     # The path for the label configurations
-        configuration-path: .github/workflows/label.yml
+        configuration-path: .github/workflows/main_cfg.yml
     # optional set to workflows/label.yml
     # Whether or not to remove labels when matching files are reverted
