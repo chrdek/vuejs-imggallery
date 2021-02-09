@@ -19,5 +19,5 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           yaml-file: .github/labels.yml
-          skip-delete: true
-          dry-run: true
+          skip-delete: false
+          dry-run: false
