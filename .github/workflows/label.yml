@@ -7,7 +7,7 @@ on:
     - cron: "45/5 14 * * *"
 
 jobs:
-  labeling:
+  automerge:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v3
@@ -15,6 +15,6 @@ jobs:
     # The GITHUB_TOKEN secret
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
     # The path for the label configurations
-        configuration-path: .github/workflows/main_cfg.yml
+    #    configuration-path: .github/workflows/main_cfg.yml
     # optional set to workflows/label.yml
     # Whether or not to remove labels when matching files are reverted
