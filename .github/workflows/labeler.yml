@@ -1,11 +1,11 @@
-# This is a basic workflow to help you get started with Actions
+# auto labeling functionality for pulls.
 
 name: "Auto Labeler"
 on:
- pull_request
+ pull_request_target
 
 jobs:
-  triage:
+  automerge:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@main
