@@ -1,4 +1,4 @@
-name: github
+name: auto labeling
 
 on: pull_request
 
