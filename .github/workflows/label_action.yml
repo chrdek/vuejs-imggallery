@@ -1,10 +1,9 @@
 name: auto labeling
 
 on: 
-  pull_request:
   schedule:
     - cron: "*/5 * * * *"
-
+  pull_request:
 
 jobs:
   labeler:
