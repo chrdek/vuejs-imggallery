@@ -13,7 +13,7 @@ jobs:
     - uses: actions/labeler@v3
       with:
     # The GITHUB_TOKEN secret
-        repo-token: "{{ $secrets.GITHUB_TOKEN }}"
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
     # The path for the label configurations
         configuration-path: .github/workflows/main_cfg.yml
     # optional set to workflows/label.yml
