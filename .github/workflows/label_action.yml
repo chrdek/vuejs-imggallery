@@ -3,7 +3,7 @@ name: auto labeling
 on: 
   schedule:
     - cron: "10 22 * * *"
-  pull_request_target:
+  pull_request:
 
 jobs:
   labeler:
