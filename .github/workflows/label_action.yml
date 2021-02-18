@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "10 22 * * *"
   pull_request:
+    branches: "master"
 
 jobs:
   labeler:
