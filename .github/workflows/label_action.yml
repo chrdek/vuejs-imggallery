@@ -22,3 +22,4 @@ jobs:
           yaml-file: .github/labels.yml
           skip-delete: true
           dry-run: false
+          include: dependencies
