@@ -4,8 +4,10 @@ on:
   schedule:
     - cron: "10 22 * * *"
   pull_request:
-    branches: "master"
-
+    branches: 
+    - "master"
+    paths:
+      - '.github/labels.yml'
 jobs:
   labeler:
     runs-on: ubuntu-latest
