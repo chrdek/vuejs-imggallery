@@ -1,8 +1,10 @@
 name: label auto merge
 
 on:
+  schedule:
+    - cron: "2 * * * *"
   pull_request:
-    types: open
+    types: opened
 
 jobs:
   add_labels:
