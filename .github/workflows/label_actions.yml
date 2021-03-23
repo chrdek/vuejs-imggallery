@@ -1,8 +1,13 @@
-name: label auto merge
+name: labels merge
 
 on:
   pull_request:
-    types: opened
+    types:
+      - labeled
+      - unlabeled
+      - opened
+      - reopened
+      - unlocked
 
 jobs:
   add_labels:
