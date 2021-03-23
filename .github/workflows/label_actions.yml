@@ -2,7 +2,7 @@ name: label auto merge
 
 on:
   pull_request:
-    types: opened
+    types: open
 
 jobs:
   add_labels:
@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ startsWith(github.event.comment.body, '/add-labels') }}
         with:
           github_token: ${{ secrets.github_token }}
           labels: automerge
