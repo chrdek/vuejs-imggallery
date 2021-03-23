@@ -2,7 +2,7 @@ name: label auto merge
 
 on:
   schedule:
-    - cron: "2 * * * *"
+    - cron: "* * * *"
   pull_request:
     types: opened
 
