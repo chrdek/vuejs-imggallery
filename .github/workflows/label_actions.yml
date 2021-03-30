@@ -3,7 +3,6 @@ name: labels merge
 on:
   pull_request:
     types:
-      - open
       - labeled
       - opened
       - reopened
