@@ -1,8 +1,6 @@
 name: labels merge
 
 on:
-  schedule:
-  - cron: "20/20 20 * * *"
   pull_request:
     types:
       - labeled
