@@ -15,7 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ contains(github.event.comment.body, 'Dependabot ') }}
         with:
           github_token:  ${{ secrets.ACTION_TOKEN }}
           number: ${{ github.event.pull_request.number }}
