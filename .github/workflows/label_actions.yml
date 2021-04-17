@@ -7,6 +7,9 @@ on:
     types:
       - opened
       - labeled
+  issues:
+    types:
+      - closed
 
 jobs:
   add_labels:
@@ -16,6 +19,6 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           github_token:  ${{ github.token }}
-          number: ${{ github.event.issue.number }}
+          number: ${{ github.event.pull_request.number }}
           repo: ${{ github.repository }}
           labels: automerge
