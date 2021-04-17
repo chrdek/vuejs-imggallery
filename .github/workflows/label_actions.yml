@@ -7,6 +7,7 @@ on:
     types:
       - opened
       - reopened
+      - labeled
 
 jobs:
   add_labels:
