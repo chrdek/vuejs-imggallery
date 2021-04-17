@@ -16,5 +16,6 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1.1.0
         with:
           github_token:  ${{ secrets.ACTION_TOKEN }}
+          number: 57
           repo: ${{ github.repository }}
           labels: automerge
