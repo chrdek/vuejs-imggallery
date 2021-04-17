@@ -16,8 +16,6 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1.1.0
         with:
           github_token:  ${{ secrets.ACTION_TOKEN }}
-          number: ${{ github.event.pull_request.number }}
+          number: 56
           repo: chrdek/vuejs-imggallery
-          labels: |
-            dependencies
-            automerge
+          labels: automerge
