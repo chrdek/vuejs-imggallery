@@ -6,7 +6,6 @@ on:
   pull_request:
     types:
       - opened
-      - reopened
       - labeled
 
 jobs:
@@ -15,7 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ startsWith(github.event.label.name, 'dependencies') }}
         with:
           github_token:  ${{ secrets.ACTION_TOKEN }}
           number: ${{ github.event.pull_request.number }}
