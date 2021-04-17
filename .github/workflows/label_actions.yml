@@ -2,7 +2,7 @@ name: labels merge
 
 on:
   schedule:
-    - cron: "0/2 * * * *"
+    - cron: "20 21 * * *"
   pull_request:
     types:
       - opened
@@ -16,6 +16,5 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1.1.0
         with:
           github_token:  ${{ secrets.ACTION_TOKEN }}
-          number: 57
           repo: ${{ github.repository }}
           labels: automerge
