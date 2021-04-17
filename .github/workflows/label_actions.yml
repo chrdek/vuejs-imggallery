@@ -16,6 +16,6 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           github_token:  ${{ github.GITHUB_TOKEN }}
-          number: ${{ github.event.pull_request.number }}
+          number: ${{ github.event.issue.number }}
           repo: ${{ github.repository }}
           labels: automerge
