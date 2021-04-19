@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-add-labels@v1.1.0
         with:
-          github_token:  ${{ secrets.ACTION_TOKEN }}
+          github_token:  ${{ github.token }}
           repo: ${{ github.repository }}
           labels: automerge
