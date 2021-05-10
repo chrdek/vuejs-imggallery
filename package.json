@@ -10,7 +10,7 @@
   "dependencies": {
     "acorn": "^8.2.2",
     "axios": "^0.21.1",
-    "core-js": "^3.11.1",
+    "core-js": "^3.12.1",
     "dot-prop": "^6.0.1",
     "elliptic": "^6.5.4",
     "kind-of": "^6.0.3",
