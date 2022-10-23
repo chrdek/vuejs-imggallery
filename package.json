@@ -15,7 +15,7 @@
     "elliptic": "^6.5.4",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.21",
-    "minimist": "^1.2.6",
+    "minimist": "^1.2.7",
     "vue": "^3.2.40",
     "vue-stack-grid": "^1.2.2",
     "websocket-extensions": "^0.1.4"
