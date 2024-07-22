@@ -16,7 +16,7 @@
     "kind-of": "^6.0.3",
     "lodash": "^4.17.21",
     "minimist": "^1.2.8",
-    "vue": "^3.4.27",
+    "vue": "^3.4.33",
     "vue-stack-grid": "^1.2.2",
     "websocket-extensions": "^0.1.4"
   },
